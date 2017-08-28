@@ -120,13 +120,13 @@ function gameIsOver() {
         {
             $("#winner").append("Winner!!Player1 catched more Pokemons");
         }
-        else if(player2 > player1){
+    if(player2 > player1){
             $("#winner").append("Winner!!Player2 catched more Pokemons");
         }
-        else if(player1 === player2)
-            {
+    if(player1 === player2)
+        {
                 $("#winner").append("Both players catched equal Pokemons");
-             }
+        }
     // show modal dialog         
     $("#myModal").modal('show');
 
