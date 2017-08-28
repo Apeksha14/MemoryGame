@@ -118,14 +118,14 @@ function gameIsOver() {
     // Append the message in the modal dialog respectively
     if(player1 > player2)
         {
-            $("#winner").append("Winner!!Player1 catched more Pokemons");
+            $("#winner").text("Winner!!Player1 catched more Pokemons");
         }
     if(player2 > player1){
-            $("#winner").append("Winner!!Player2 catched more Pokemons");
+            $("#winner").text("Winner!!Player2 catched more Pokemons");
         }
     if(player1 === player2)
         {
-                $("#winner").append("Both players catched equal Pokemons");
+                $("#winner").text("Both players catched equal Pokemons");
         }
     // show modal dialog         
     $("#myModal").modal('show');
@@ -150,12 +150,10 @@ function reset()
 function cardsDoNotMatch() {
    if(playerturn === 1){
     playerturn = 2;
-    console.log(playerturn);
     }
    else
    if(playerturn === 2){
     playerturn = 1;
-    console.log(playerturn);
     
    }
   setTimeout(flipCardBack, 700);
